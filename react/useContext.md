@@ -8,7 +8,7 @@
 
 在 React 中使用上下文需要 3 个简单的步骤：创建上下文、提供上下文和使用上下文。
 
-## A. 创建上下文
+### A. 创建上下文
 
 内置的工厂函数（createContext)创建一个上下文实例：
 
@@ -20,7 +20,7 @@ const Context = createContext('default value')
 ```
 工厂函数接受一个可选参数：default value
 
-## B. Providing the context
+### B. Providing the context
 
 contenxt实例上可用的 Context.Provider 组件用于为其子组件提供上下文，无论它们有多深
 
@@ -40,7 +40,7 @@ function Main() {
 
 如果要更改上下文值，只需更新 value 属性即可。
 
-## C. Consuming the context
+### C. Consuming the context
 
 可以通过两种方式使用上下文。
 
@@ -79,4 +79,8 @@ function Mycomponent() {
 对于单个上下文，您可以拥有任意数量的consumers。如果上下文值发生变化（通过更改提供者的 value 属性 <Context.Provider value={value} />），那么所有consumers都会立即收到通知并重新渲染。
 
 如果consumer没有被包装在提供者中，但仍然尝试访问上下文值（使用 useContext(Context) 或 <Context.Consumer>），那么上下文的值将是提供给 createContext(defaultValue) 的默认值参数) 创建上下文的工厂函数。
+
+## 2.什么时候使用context?
+
+使用context的主要思想是允许您的组件访问某些全局数据并在该全局数据更改时重新渲染。 Context 解决了prop drilling问题：当你必须将道具从父母传给孩子时。
 
