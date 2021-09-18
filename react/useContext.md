@@ -74,7 +74,7 @@ function Mycomponent() {
 ```
 同样， 在这个案例中如果context value改变， Context.Consumer将会重新渲染render函数
 
-<img src="./react-context-3.svg" width="500" />
+<img src="https://github.com/tailer-zhang/gitbook/blob/master/images/react-context-3.svg" width="500" />
 
 对于单个上下文，您可以拥有任意数量的consumers。如果上下文值发生变化（通过更改提供者的 value 属性 <Context.Provider value={value} />），那么所有consumers都会立即收到通知并重新渲染。
 
