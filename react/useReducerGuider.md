@@ -116,10 +116,7 @@ React 检查新状态和当前状态之间的差异来确定状态是否已更�
 
 将所有这些术语连接在一起，以下是使用reducer进行状态更新的流程图
 
-```
-插入图片
-
-```
+<img src="https://github.com/tailer-zhang/python/blob/master/wechat.png" width="300" />
 
 作为事件处理程序的结果或在完成获取请求后，您可以使用 action 对象调用调度函数。
 
