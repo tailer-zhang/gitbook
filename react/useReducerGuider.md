@@ -31,7 +31,7 @@ funciton MyComponent() {
 }
 
 ```
-现在，让我们解读一下初始状态、动作对象、调度和减速器这三个术语的含义。
+现在，让我们解读一下初始sate、action对象、dispatch和reducer这三个术语的含义。
 
 ## A. initial state
 
