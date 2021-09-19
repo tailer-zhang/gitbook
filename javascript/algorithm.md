@@ -50,7 +50,7 @@ function selectionSort(arr) {
     for (var i = 0 ; i < len; i++){
         //假设当前位置i为最小（最大）
         min = i;
-        fpr (var j = j+1; j<len; j++){
+        for (var j = j+1; j<len; j++){
             if(arr[j] < arr[minIndex]){
                 minIndex = j
             }
