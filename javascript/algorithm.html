@@ -226,9 +226,9 @@
 <blockquote>
 <p>1.&#x4F9D;&#x6B21;&#x6BD4;&#x8F83;&#x76F8;&#x90BB;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x7B26;&#x5408;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;&#x5219;&#x8C03;&#x6362;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x904D;&#x6BD4;&#x8F83;&#x4E0B;&#x6765;&#xFF0C;&#x80FD;&#x591F;&#x6700;&#x5927;&#x4FDD;&#x8BC1;&#x6700;&#x5927;&#x7684;&#x6570;&#x6392;&#x5728;&#x6700;&#x540E;</p>
 <p>2.&#x5728;&#x5BF9;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x4EE5;&#x5916;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x91CD;&#x590D;&#x524D;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x76F4;&#x81F3;&#x5168;&#x90E8;&#x6392;&#x5E8F;&#x5B8C;&#x6210;</p>
-<p>javascript &#x4EE3;&#x7801;
-```
-funciton bubbleSort(arr) {
+</blockquote>
+<p>javascript &#x4EE3;&#x7801;</p>
+<pre><code>funciton bubbleSort(arr) {
     var len= arr.length
     //&#x5148;&#x5FAA;&#x73AF;
     for(var i =0; i &lt; len -1; i++) {
@@ -240,55 +240,47 @@ funciton bubbleSort(arr) {
                 arr[j + 1] = temp
             }
         }
-    }</p>
-</blockquote>
-<pre><code>return arr
-</code></pre><p>}</p>
-<pre><code>## 2.&#x9009;&#x62E9;&#x6392;&#x5E8F;
-
-&#x9009;&#x62E9;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(n2)
-
-&#x6B65;&#x9AA4;&#xFF1A;
-
-&gt; &#x9996;&#x5148;&#x5728;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x627E;&#x5230;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x5B58;&#x653E;&#x5230;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;
-&gt; 
-&gt; &#x518D;&#x4ECE;&#x5269;&#x4F59;&#x672A;&#x6392;&#x5E8F;&#x5143;&#x7D20;&#x4E2D;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x653E;&#x5230;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x672B;&#x5C3E;
-&gt; 
-&gt; &#x91CD;&#x590D;&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x5B8C;&#x6BD5;
-&gt; 
-js&#x4EE3;&#x7801;
-</code></pre><p>function selectionSort(arr) {
-    var len = arr.lenght,
-        minIndex;</p>
-<pre><code>for (var i = 0 ; i &lt; len; i++){
-    //&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;i&#x4E3A;&#x6700;&#x5C0F;&#xFF08;&#x6700;&#x5927;&#xFF09;
-    min = i;
-    for (var j = j+1; j&lt;len; j++){
-        if(arr[j] &lt; arr[minIndex]){
-            minIndex = j
-        }
     }
-    temp = arr[i];
-    arr[i] = arr[minIndex];
-    arr[minIndex] = temp;
+
+    return arr
 }
+</code></pre><h2 id="2&#x9009;&#x62E9;&#x6392;&#x5E8F;">2.&#x9009;&#x62E9;&#x6392;&#x5E8F;</h2>
+<p>&#x9009;&#x62E9;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(n2)</p>
+<p>&#x6B65;&#x9AA4;&#xFF1A;</p>
+<blockquote>
+<p>&#x9996;&#x5148;&#x5728;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x627E;&#x5230;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x5B58;&#x653E;&#x5230;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;</p>
+<p>&#x518D;&#x4ECE;&#x5269;&#x4F59;&#x672A;&#x6392;&#x5E8F;&#x5143;&#x7D20;&#x4E2D;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x653E;&#x5230;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x672B;&#x5C3E;</p>
+<p>&#x91CD;&#x590D;&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x5B8C;&#x6BD5;</p>
+</blockquote>
+<p>js&#x4EE3;&#x7801;</p>
+<pre><code>function selectionSort(arr) {
+    var len = arr.lenght,
+        minIndex;
 
-return arr
-</code></pre><p>}</p>
-<pre><code>## 3.&#x63D2;&#x5165;&#x6392;&#x5E8F;
+    for (var i = 0 ; i &lt; len; i++){
+        //&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;i&#x4E3A;&#x6700;&#x5C0F;&#xFF08;&#x6700;&#x5927;&#xFF09;
+        min = i;
+        for (var j = j+1; j&lt;len; j++){
+            if(arr[j] &lt; arr[minIndex]){
+                minIndex = j
+            }
+        }
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
 
-&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x6784;&#x5EFA;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5BF9;&#x4E8E;&#x672A;&#x6392;&#x5E8F;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x4ECE;&#x540E;&#x5411;&#x524D;&#x626B;&#x63CF;&#xFF0C;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;
-
-&#x6B65;&#x9AA4;&#xFF1A;
-
-
-&gt; 1.&#x5C06;&#x7B2C;&#x4E00;&#x5F85;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x628A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5230;&#x5269;&#x4E0B;&#x7684;&#x5143;&#x7D20;&#x5F53;&#x4F5C;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;
-&gt; 
-&gt; 2.&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x4F9D;&#x6B21;&#x626B;&#x63CF;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5C06;&#x626B;&#x63CF;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x9002;&#x5F53;&#x4F4D;&#x7F6E;&#x3002;&#xFF08;&#x5982;&#x679C;&#x5F85;&#x63D2;&#x5165;&#x7684;&#x5143;&#x7D20;&#x4E0E;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x5C06;&#x5F85;&#x63D2;&#x5165;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x76F8;&#x7B49;&#x5143;&#x7D20;&#x7684;&#x540E;&#x9762;&#xFF09;
-&gt;
-
-js&#x4EE3;&#x7801;&#x5B9E;&#x73B0;
-</code></pre><p>function insertionSort(arr){
+    return arr
+}
+</code></pre><h2 id="3&#x63D2;&#x5165;&#x6392;&#x5E8F;">3.&#x63D2;&#x5165;&#x6392;&#x5E8F;</h2>
+<p>&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x6784;&#x5EFA;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5BF9;&#x4E8E;&#x672A;&#x6392;&#x5E8F;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x4ECE;&#x540E;&#x5411;&#x524D;&#x626B;&#x63CF;&#xFF0C;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;</p>
+<p>&#x6B65;&#x9AA4;&#xFF1A;</p>
+<blockquote>
+<p>1.&#x5C06;&#x7B2C;&#x4E00;&#x5F85;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x628A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5230;&#x5269;&#x4E0B;&#x7684;&#x5143;&#x7D20;&#x5F53;&#x4F5C;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;</p>
+<p>2.&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x4F9D;&#x6B21;&#x626B;&#x63CF;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5C06;&#x626B;&#x63CF;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x9002;&#x5F53;&#x4F4D;&#x7F6E;&#x3002;&#xFF08;&#x5982;&#x679C;&#x5F85;&#x63D2;&#x5165;&#x7684;&#x5143;&#x7D20;&#x4E0E;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x5C06;&#x5F85;&#x63D2;&#x5165;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x76F8;&#x7B49;&#x5143;&#x7D20;&#x7684;&#x540E;&#x9762;&#xFF09;</p>
+</blockquote>
+<p>js&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</p>
+<pre><code>function insertionSort(arr){
     var len = arr.length,
         preIndex,
         current;
@@ -298,10 +290,42 @@ js&#x4EE3;&#x7801;&#x5B9E;&#x73B0;
         arr[preIndex + 1] = arr[preIndex]
         preIndex--
     }
-    arr[preIndex+1] = current;</p>
-<pre><code>return arr;
-</code></pre><p>}</p>
-<p>```</p>
+    arr[preIndex+1] = current;
+
+    return arr;
+}
+</code></pre><h2 id="4&#x5E0C;&#x5C14;&#x6392;&#x5E8F;">4.&#x5E0C;&#x5C14;&#x6392;&#x5E8F;</h2>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#xFF0C;&#x4E5F;&#x79F0;&#x9012;&#x51CF;&#x589E;&#x91CF;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x662F;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x7684;&#x4E00;&#x79CD;&#x9AD8;&#x6548;&#x7684;&#x6539;&#x8FDB;&#x7248;&#x672C;&#x3002;&#x4F46;&#x662F;&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x662F;&#x975E;&#x7A33;&#x5B9A;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;</p>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x662F;&#x57FA;&#x4E8E;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x7684;&#x4EE5;&#x4E0B;&#x4E24;&#x70B9;&#x6027;&#x8D28;&#x800C;&#x63D0;&#x51FA;&#x6539;&#x8FDB;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>1.&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x5728;&#x5BF9;&#x51E0;&#x4E4E;&#x5E94;&#x6392;&#x597D;&#x5E8F;&#x7684;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x6548;&#x7387;&#x9AD8;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x7EBF;&#x6027;&#x6392;&#x5E8F;&#x7684;&#x6548;&#x7387;</p>
+<p>2.&#x4F46;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x662F;&#x4F4E;&#x6548;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x6BCF;&#x6B21;&#x53EA;&#x80FD;&#x5C06;&#x6570;&#x636E;&#x79FB;&#x52A8;&#x4E00;&#x4F4D;</p>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;&#x662F;&#xFF1A; &#x5148;&#x5C06;&#x6574;&#x4E2A;&#x5F85;&#x6392;&#x5E8F;&#x7684;&#x8BB0;&#x5F55;&#x5E8F;&#x5217;&#x5206;&#x5272;&#x4E3A;&#x82E5;&#x5E72;&#x5B50;&#x5E8F;&#x5217;&#x5206;&#x522B;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#xFF0C;&#x5F85;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&quot;&#x57FA;&#x672C;&#x6709;&#x5E8F;&quot;&#x65F6;&#xFF0C;&#x518D;&#x5BF9;&#x5168;&#x4F53;&#x8BB0;&#x5F55;&#x8FDB;&#x884C;&#x4F9D;&#x6B21;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;</p>
+<p>&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;</p>
+<blockquote>
+<p>1.&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x589E;&#x91CF;&#x5E8F;&#x5217;t1, t2, ...., tk, &#x5176;&#x4E2D;ti &gt; tj, tk = 1;</p>
+<p>2.&#x6309;&#x589E;&#x91CF;&#x5E8F;&#x5217;&#x4E2A;&#x6570;k, &#x5BF9;&#x5E8F;&#x5217;&#x8FDB;&#x884C; k &#x8D9F;&#x6392;&#x5E8F;;</p>
+<p>3.&#x6BCF;&#x8D9F;&#x6392;&#x5E8F;&#xFF0C;&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x589E;&#x91CF; ti&#xFF0C;&#x5C06;&#x5F85;&#x6392;&#x5E8F;&#x5217;&#x5206;&#x5272;&#x6210;&#x82E5;&#x5E72;&#x957F;&#x5EA6;&#x4E3A; m &#x7684;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5404;&#x5B50;&#x8868;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x3002;&#x4EC5;&#x589E;&#x91CF;&#x56E0;&#x5B50;&#x4E3A; 1 &#x65F6;&#xFF0C;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x8868;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x8868;&#x957F;&#x5EA6;&#x5373;&#x4E3A;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+</blockquote>
+<p>javascript&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</p>
+<pre><code>function shellSort (arr) {
+    var len = arr.length,
+        temp,
+        gap = 1;
+    while(gap &lt; len/3) {  //&#x52A8;&#x6001;&#x5B9A;&#x4E49;&#x95F4;&#x9694;&#x5E8F;&#x5217;
+        gap = gap*3 +1;
+    }
+    for (gap; gap &gt; 0 ; gap = Math.floor(gap/3)) {
+        for (var i = gap; i &lt; len; i++ ) {
+            temp = arr[i];
+            for (var j = i - gap; j &gt;=0 &amp;&amp; arr[j] &gt; temp; j-=gap ) {
+                arr[j+gap] = arr[j]
+            }
+            arr[j+gap] = temp;
+        }
+    }
+    return arr;
+}
+</code></pre><h2 id="5&#x5F52;&#x5E76;&#x6392;&#x5E8F;">5.&#x5F52;&#x5E76;&#x6392;&#x5E8F;</h2>
 
                                 
                                 </section>
@@ -337,7 +361,7 @@ js&#x4EE3;&#x7801;&#x5B9E;&#x73B0;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"js十大排序算法","level":"1.3.1","depth":2,"previous":{"title":"javascript","level":"1.3","depth":1,"ref":"","articles":[{"title":"js十大排序算法","level":"1.3.1","depth":2,"path":"javascript/algorithm.md","ref":"javascript/algorithm.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javascript/algorithm.md","mtime":"2021-09-19T09:46:45.191Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-19T09:49:42.837Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"js十大排序算法","level":"1.3.1","depth":2,"previous":{"title":"javascript","level":"1.3","depth":1,"ref":"","articles":[{"title":"js十大排序算法","level":"1.3.1","depth":2,"path":"javascript/algorithm.md","ref":"javascript/algorithm.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javascript/algorithm.md","mtime":"2021-09-19T12:44:24.648Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-19T13:27:53.307Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
