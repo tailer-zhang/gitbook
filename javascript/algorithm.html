@@ -1,0 +1,376 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>js十大排序算法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    react
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../react/useReducerGuider.html">
+            
+                <a href="../react/useReducerGuider.html">
+            
+                    
+                    useReducer Hook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../react/useContext.html">
+            
+                <a href="../react/useContext.html">
+            
+                    
+                    useContext Hook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="algorithm.html">
+            
+                <a href="algorithm.html">
+            
+                    
+                    js十大排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >js十大排序算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="js&#x5341;&#x5927;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;">js&#x5341;&#x5927;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;</h1>
+<h2 id="&#x5192;&#x6CE1;&#x6392;&#x5E8F;">&#x5192;&#x6CE1;&#x6392;&#x5E8F;</h2>
+<p>&#x6B65;&#x9AA4;&#xFF1A;</p>
+<blockquote>
+<p>1.&#x4F9D;&#x6B21;&#x6BD4;&#x8F83;&#x76F8;&#x90BB;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x7B26;&#x5408;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;&#x5219;&#x8C03;&#x6362;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x904D;&#x6BD4;&#x8F83;&#x4E0B;&#x6765;&#xFF0C;&#x80FD;&#x591F;&#x6700;&#x5927;&#x4FDD;&#x8BC1;&#x6700;&#x5927;&#x7684;&#x6570;&#x6392;&#x5728;&#x6700;&#x540E;</p>
+<p>2.&#x5728;&#x5BF9;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x4EE5;&#x5916;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x91CD;&#x590D;&#x524D;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x76F4;&#x81F3;&#x5168;&#x90E8;&#x6392;&#x5E8F;&#x5B8C;&#x6210;</p>
+<p>javascript &#x4EE3;&#x7801;
+```
+funciton bubbleSort(arr) {
+    var len= arr.length
+    //&#x5148;&#x5FAA;&#x73AF;
+    for(var i =0; i &lt; len -1; i++) {
+        for(var j = 0; j&lt; len -1 - j; j++){
+            if(arr[j] &gt; arr[j+1]) {
+                //swap
+                var temp = arr[j]
+                arr[j] = arr[j+1];
+                arr[j + 1] = temp
+            }
+        }
+    }</p>
+</blockquote>
+<pre><code>return arr
+</code></pre><p>}</p>
+<pre><code>## 2.&#x9009;&#x62E9;&#x6392;&#x5E8F;
+
+&#x9009;&#x62E9;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(n2)
+
+&#x6B65;&#x9AA4;&#xFF1A;
+
+&gt; &#x9996;&#x5148;&#x5728;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x627E;&#x5230;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x5B58;&#x653E;&#x5230;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;
+&gt; 
+&gt; &#x518D;&#x4ECE;&#x5269;&#x4F59;&#x672A;&#x6392;&#x5E8F;&#x5143;&#x7D20;&#x4E2D;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x6700;&#x5C0F;&#xFF08;&#x5927;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x653E;&#x5230;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x672B;&#x5C3E;
+&gt; 
+&gt; &#x91CD;&#x590D;&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x5B8C;&#x6BD5;
+&gt; 
+js&#x4EE3;&#x7801;
+</code></pre><p>function selectionSort(arr) {
+    var len = arr.lenght,
+        minIndex;</p>
+<pre><code>for (var i = 0 ; i &lt; len; i++){
+    //&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;i&#x4E3A;&#x6700;&#x5C0F;&#xFF08;&#x6700;&#x5927;&#xFF09;
+    min = i;
+    for (var j = j+1; j&lt;len; j++){
+        if(arr[j] &lt; arr[minIndex]){
+            minIndex = j
+        }
+    }
+    temp = arr[i];
+    arr[i] = arr[minIndex];
+    arr[minIndex] = temp;
+}
+
+return arr
+</code></pre><p>}</p>
+<pre><code>## 3.&#x63D2;&#x5165;&#x6392;&#x5E8F;
+
+&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x6784;&#x5EFA;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5BF9;&#x4E8E;&#x672A;&#x6392;&#x5E8F;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5DF2;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x4ECE;&#x540E;&#x5411;&#x524D;&#x626B;&#x63CF;&#xFF0C;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;
+
+&#x6B65;&#x9AA4;&#xFF1A;
+
+
+&gt; 1.&#x5C06;&#x7B2C;&#x4E00;&#x5F85;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x628A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5230;&#x5269;&#x4E0B;&#x7684;&#x5143;&#x7D20;&#x5F53;&#x4F5C;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;
+&gt; 
+&gt; 2.&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x4F9D;&#x6B21;&#x626B;&#x63CF;&#x672A;&#x6392;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x5C06;&#x626B;&#x63CF;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x9002;&#x5F53;&#x4F4D;&#x7F6E;&#x3002;&#xFF08;&#x5982;&#x679C;&#x5F85;&#x63D2;&#x5165;&#x7684;&#x5143;&#x7D20;&#x4E0E;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x5C06;&#x5F85;&#x63D2;&#x5165;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x76F8;&#x7B49;&#x5143;&#x7D20;&#x7684;&#x540E;&#x9762;&#xFF09;
+&gt;
+
+js&#x4EE3;&#x7801;&#x5B9E;&#x73B0;
+</code></pre><p>function insertionSort(arr){
+    var len = arr.length,
+        preIndex,
+        current;
+    preIndex = i -1;
+    current = arr[i];
+    while( preIndex &gt;=0 &amp;&amp; arr[preIndex] &gt; current){
+        arr[preIndex + 1] = arr[preIndex]
+        preIndex--
+    }
+    arr[preIndex+1] = current;</p>
+<pre><code>return arr;
+</code></pre><p>}</p>
+<p>```</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"js十大排序算法","level":"1.3.1","depth":2,"previous":{"title":"javascript","level":"1.3","depth":1,"ref":"","articles":[{"title":"js十大排序算法","level":"1.3.1","depth":2,"path":"javascript/algorithm.md","ref":"javascript/algorithm.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javascript/algorithm.md","mtime":"2021-09-19T09:46:45.191Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-19T09:49:42.837Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
